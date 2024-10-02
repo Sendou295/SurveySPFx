@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "servey-webpart-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/serveyWebpart/ServeyWebpartWebPart.js",
+          "manifest": "./src/webparts/serveyWebpart/ServeyWebpartWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ServeyWebpartWebPartStrings": "lib/webparts/serveyWebpart/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js"
+  }
+}
